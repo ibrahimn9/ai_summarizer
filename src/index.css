@@ -1,0 +1,112 @@
+:root {
+    --color-primary: #ffae3e;
+    --color-primary-dark: #fc6336;
+}
+
+body {
+    font-family: "Urbanist", sans-serif;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+.nav-bar img {
+    width: 150px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.nav-bar a button {
+    padding: 10px 22px;
+    background: black;
+    color: white;
+    font-size: 18px;
+    border: 1px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.nav-bar a button:hover {
+    opacity: .8;
+}
+
+.hero h1 {
+    font-size: 52px;
+    font-weight: 900;
+    margin: 0;
+}
+
+.hero p {
+    padding: 0 25%;
+    color: gray;
+    font-size: 18px;
+}
+
+.hero form {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-top: 50px;
+}
+
+.hero form img {
+    position: absolute;
+    left: 0;
+    margin: 2px 0;
+    margin-left: 10px;
+    
+}
+
+.hero form input {
+   width: 100%;
+   padding: 14px 0;
+   padding-left: 50px;
+   font-size: 18px; 
+   border: none;
+   outline: none;
+   box-shadow: 5px 5px 10px grey;
+   border-radius: 5px;
+}
+
+
+.hero form input::placeholder {
+    position: absolute;
+    font-size: 18px;    
+}
+
+.hero form button {
+    position: absolute;
+    right: 0;
+    margin-right: 15px;
+    color: gray;
+    background: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 3px 12px;
+    z-index: 10;
+}
+
+@media screen and (max-width: 900px) {
+    .hero form {
+        width: 80%;
+    }
+}
+
+.loading {
+    animation: spin 1s ease-in-out infinite;
+}
+  
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
